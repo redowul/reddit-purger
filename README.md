@@ -1,6 +1,6 @@
 # Reddit Purger
 
-This is a program to delete any Reddit comments and submissions associated with a given Reddit account. This is achieved through use of the Pushshift API to retrieve all the comment/submission ids associated with said account and passing those ids to PRAW (The Python Reddit API Wrapper) for deletion. Pushshift was necessary to accomplish this goal because Reddit's API limits the maximum amount of data that can be retrieved to the most recently posted 1000, with no means of retrieving older data even if those initial 1000 comments and submissions are deleted.
+This is a script to delete any Reddit comments and submissions associated with a given Reddit account. This is achieved through use of the Pushshift API to retrieve all the comment/submission ids associated with said account and passing those ids to PRAW (The Python Reddit API Wrapper) for deletion. Pushshift was necessary to accomplish this goal because Reddit's API limits the maximum amount of data that can be retrieved to the most recently posted 1000, with no means of retrieving older data even if those initial 1000 comments and submissions are deleted.
 
 Pushshift is a separate database which stores a copy of everything posted on reddit. Every comment, every submission. Using this database, all data about a particular account can be retrieved and passed to PRAW, bypassing Reddit's 1000 post retrieval limit.
 
