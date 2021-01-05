@@ -2,7 +2,7 @@
 
 This is a script to delete any Reddit comments and submissions associated with a given Reddit account. This is achieved through use of the Pushshift API to retrieve all the comment/submission ids associated with said account and passing those ids to PRAW (The Python Reddit API Wrapper) for deletion. Pushshift was necessary to accomplish this goal because Reddit's API limits the maximum amount of data that can be retrieved to the most recently posted 1000, with no means of retrieving older data even if those initial 1000 comments and submissions are deleted.
 
-Pushshift is a separate database which stores a copy of everything posted on reddit. Every comment, every submission. Using this database, all data about a particular account can be retrieved and passed to PRAW, bypassing Reddit's 1000 post retrieval limit.
+Pushshift is a separate database which stores a copy of everything posted on Reddit. Every comment, every submission. Using this database, all data about a particular account can be retrieved and passed to PRAW, bypassing Reddit's 1000 post retrieval limit.
 
 ##### Those interested in completely deleting their Reddit data be warned, as this process only deletes your data from Reddit's servers and not Pushshifts, the copy will remain to be read by websites such as removeddit.com, which displays information fetched from the Pushshift database. Luckily, the maintainers of Pushshift will fulfill any requests for data deletion from Pushshift if the owner of the account requests that they do so. Find out more at https://www.reddit.com/r/pushshift/
 
